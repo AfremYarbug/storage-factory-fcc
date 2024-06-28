@@ -1,17 +1,37 @@
-<h3 align="center">Storage-Factory</h3>
+# Lesson 3: Remix Storage Factory
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+_[⌨️ (03:05:34) Lesson 3: Remix Storage Factory](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=11134s)_
 
-<!-- TIMESTAMPS -->
-## Timestamps
+💻 Code: https://github.com/PatrickAlphaC/storage-factory-fcc
 
-([03:05:34](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=11134s)) Lesson 3: Remix Storage Factory
+## Introduction
 
-([03:07:29](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=11249s)): Importing Contracts into other Contracts
+_[⌨️ (03:06:06) Introduction](https://youtu.be/gyMwXuJrbJQ?t=11166)_
 
-([03:16:37](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=11797s)): Interacting with other contracts
+- [Factory Pattern](https://betterprogramming.pub/learn-solidity-the-factory-pattern-75d11c3e7d29)
 
-([03:25:24](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=12324s)): Inheritance & Overrides
+## Basic Solidity: Importing Contracts into other Contracts
 
-([03:30:31](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=12631s)): Lesson 3 Recap
+_[⌨️ (03:07:29) Importing Contracts into other Contracts](https://youtu.be/gyMwXuJrbJQ?t=11249)_
+
+- [Composibility](https://chain.link/techtalks/defi-composability)
+- [Solidity new keyword](https://docs.soliditylang.org/en/latest/control-structures.html?highlight=new#creating-contracts-via-new)
+- [Importing Code in solidity](https://solidity-by-example.org/import)
+
+## Basic Solidity: Interacting with other Contracts
+
+_[⌨️ (03:16:36) Interacting with other contracts](https://youtu.be/gyMwXuJrbJQ?t=11796)_
+
+- To interact, you always need: ABI + Address
+- [ABI](https://docs.soliditylang.org/en/latest/abi-spec.html?highlight=abi)
+
+## Basic Solidity: Inheritance & Overrides
+
+_[⌨️ (03:25:23) Inheritance & Overrides](https://youtu.be/gyMwXuJrbJQ?t=12323)_
+
+- [Inheritance](https://solidity-by-example.org/inheritance)
+- [Override & Virtual Keyword](https://docs.soliditylang.org/en/latest/contracts.html?highlight=override#function-overriding)
+
+## Lesson 3 Recap
+
+_[⌨️ (03:30:29) Lesson 3 Recap](https://youtu.be/gyMwXuJrbJQ?t=12629)_

@@ -1,3 +1,8 @@
+# About the Project
+- expand to 3 different contracts
+- storage factory is a contract that deploys contracts
+
+
 # Lesson 3: Remix Storage Factory
 
 _[⌨️ (03:05:34) Lesson 3: Remix Storage Factory](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=11134s)_
@@ -14,9 +19,8 @@ _[⌨️ (03:06:06) Introduction](https://youtu.be/gyMwXuJrbJQ?t=11166)_
 
 _[⌨️ (03:07:29) Importing Contracts into other Contracts](https://youtu.be/gyMwXuJrbJQ?t=11249)_
 
-- [Composibility](https://chain.link/techtalks/defi-composability)
-- [Solidity new keyword](https://docs.soliditylang.org/en/latest/control-structures.html?highlight=new#creating-contracts-via-new)
-- [Importing Code in solidity](https://solidity-by-example.org/import)
+### import a contract
+`import "./SimpleStorage.sol"`
 
 ## Basic Solidity: Interacting with other Contracts
 

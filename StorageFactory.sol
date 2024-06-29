@@ -1,32 +1,29 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.8;
+// SPDX-License-Identifier: MIT 
 
-contract SimpleStorage {
-    uint256 public favoriteNumber;
+/**create simplestorage contracts and then saves it to the array and then read the values in the array */
+pragma solidity ^0.8.7;
 
-    // Dictionary where every single name maps to a specific number
-    mapping(string => uint256) public nameToFavoriteNumber;
+import "./SimpleStorage.sol"; 
 
-    People[] public people;
-
-    struct People {
-        uint256 favoriteNumber;
-        string name;
+contract StorageFactory {
+    
+    SimpleStorage[] public simpleStorageArray;
+    
+    function createSimpleStorageContract() public {
+        SimpleStorage simpleStorage = new SimpleStorage();
+        simpleStorageArray.push(simpleStorage);
     }
-
-    // Change the value of favoriteNumber
-    function store(uint256 _favoriteNumber) public virtual {
-        favoriteNumber = _favoriteNumber;
+    
+    // call store function on all over simple storages from storage factory
+    function sfStore(uint256 _simpleStorageIndex, uint256 _simpleStorageNumber) public {
+        // Address 
+        // ABI 
+        // SimpleStorage(address(simpleStorageArray[_simpleStorageIndex])).store(_simpleStorageNumber);
+        simpleStorageArray[_simpleStorageIndex].store(_simpleStorageNumber);
     }
-
-    // View and pure functions don't spend gas
-    function retrieve() public view returns (uint256) {
-        return favoriteNumber;
-    }
-
-    // Structs, mappings, and arrays are memory when added to parameters
-    function addPerson(string memory _name, uint256 _favoriteNumber) public {
-        people.push(People(_favoriteNumber, _name));
-        nameToFavoriteNumber[_name] = _favoriteNumber;
+    
+    function sfGet(uint256 _simpleStorageIndex) public view returns (uint256) {
+        // return SimpleStorage(address(simpleStorageArray[_simpleStorageIndex])).retrieve();
+        return simpleStorageArray[_simpleStorageIndex].retrieve();
     }
 }
